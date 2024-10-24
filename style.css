@@ -1,0 +1,185 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+}
+
+.container {
+    text-align: center;
+    padding: 2rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 0.5rem 1rem;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+}
+/*.dot {
+    height: 250px;
+    width: 250px;
+    position: fixed;
+    left: -125px; 
+    top: 50%;  
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transform: translateY(-50%);
+}*/
+.sun {
+    height: 20vw; /* Adjust height to be responsive based on viewport width */
+    width: 20vw;  /* Adjust width to be responsive based on viewport width */
+    position: fixed;
+    left: calc(-10vw); /* Position on the left side, adjusting for half the width */
+    top: 50%;  /* Position at 50% from the top of the viewport */
+    background-color: #f27500;
+    border-radius: 50%;  /* Keep it circular */
+    display: inline-block;
+    transform: translateY(-50%);  /* Center vertically */
+    max-height: 350px;  /* Set maximum size to 350px */
+    max-width: 350px;   /* Set maximum size to 350px */
+    min-height: 150px;  /* Set minimum size to avoid getting too small */
+    min-width: 150px;   /* Set minimum size */
+}
+.mercury{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 525px; /* Size of the planet */
+    height: 125px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    transform: translate(-50%, -280px); /* Position the planet at the top of the orbit */
+      
+    /* Animation to make the planet rotate around the orbit */
+    animation: orbitMercury 3s linear infinite; /* Adjust the speed of orbit */
+      
+      
+      /* Keyframes for Mercury's orbit animation */
+@keyframes orbitMercury {
+    0% {
+      transform: translate(-50%, -280px); /* Start at the top */
+    }
+    25% {
+      transform: translate(280px, -50%); /* Move to the right */
+    }
+    50% {
+      transform: translate(-50%, 280px); /* Move to the bottom */
+    }
+    75% {
+      transform: translate(-280px, -50%); /* Move to the left */
+    }
+    100% {
+      transform: translate(-50%, -280px); /* Complete the orbit */
+    }
+    }
+}
+.mercury_orbit {
+    position: fixed; /* Fixed positioning to maintain the trajectory's position */
+    top: 50%; /* Center vertically */
+    left: calc(-280px); /* Lock the trajectory position to the left edge */
+    width: 560px; /* Adjust the diameter of the trajectory to be larger */
+    height: 560px; /* Ensure it's circular */
+    background-color: transparent; /* Transparent background */
+    border: 1px solid rgb(255, 255, 255); /* Color and thickness of the trajectory */
+    border-radius: 50%; /* Create a circular shape */
+    transform: translateY(-50%); 
+}
+.venus_orbit {
+    position: fixed; /* Fixed positioning to maintain the trajectory's position */
+    top: 50%; /* Center vertically */
+    left: calc(-375px); /* Lock the trajectory position to the left edge */
+    width: 750px; /* Adjust the diameter of the trajectory to be larger */
+    height: 750px; /* Ensure it's circular */
+    background-color: transparent; /* Transparent background */
+    border: 1px solid rgb(255, 255, 255); /* Color and thickness of the trajectory */
+    border-radius: 50%; /* Create a circular shape */
+    transform: translateY(-50%); 
+}
+.earth_orbit {
+    position: fixed; /* Fixed positioning to maintain the trajectory's position */
+    top: 50%; /* Center vertically */
+    left: calc(-500px); /* Lock the trajectory position to the left edge */
+    width: 1000px; /* Adjust the diameter of the trajectory to be larger */
+    height: 1000px; /* Ensure it's circular */
+    background-color: transparent; /* Transparent background */
+    border: 1px solid rgb(255, 255, 255); /* Color and thickness of the trajectory */
+    border-radius: 50%; /* Create a circular shape */
+    transform: translateY(-50%); 
+}
+.mars_orbit {
+    position: fixed; /* Fixed positioning to maintain the trajectory's position */
+    top: 50%; /* Center vertically */
+    left: calc(-600px); /* Lock the trajectory position to the left edge */
+    width: 1200px; /* Adjust the diameter of the trajectory to be larger */
+    height: 1200px; /* Ensure it's circular */
+    background-color: transparent; /* Transparent background */
+    border: 1px solid rgb(255, 255, 255); /* Color and thickness of the trajectory */
+    border-radius: 50%; /* Create a circular shape */
+    transform: translateY(-50%); 
+}
+.jupiter_orbit {
+    position: fixed; /* Fixed positioning to maintain the trajectory's position */
+    top: 50%; /* Center vertically */
+    left: calc(-775px); /* Lock the trajectory position to the left edge */
+    width: 1550px; /* Adjust the diameter of the trajectory to be larger */
+    height: 1550px; /* Ensure it's circular */
+    background-color: transparent; /* Transparent background */
+    border: 1px solid rgb(255, 255, 255); /* Color and thickness of the trajectory */
+    border-radius: 50%; /* Create a circular shape */
+    transform: translateY(-50%); 
+}
+.saturn_orbit {
+    position: fixed; /* Fixed positioning to maintain the trajectory's position */
+    top: 50%; /* Center vertically */
+    left: calc(-975px); /* Lock the trajectory position to the left edge */
+    width: 1950px; /* Adjust the diameter of the trajectory to be larger */
+    height: 1950px; /* Ensure it's circular */
+    background-color: transparent; /* Transparent background */
+    border: 1px solid rgb(255, 255, 255); /* Color and thickness of the trajectory */
+    border-radius: 50%; /* Create a circular shape */
+    transform: translateY(-50%); 
+}
+.uranus_orbit {
+    position: fixed; /* Fixed positioning to maintain the trajectory's position */
+    top: 50%; /* Center vertically */
+    left: calc(-1125px); /* Lock the trajectory position to the left edge */
+    width: 2250px; /* Adjust the diameter of the trajectory to be larger */
+    height: 2250px; /* Ensure it's circular */
+    background-color: transparent; /* Transparent background */
+    border: 1px solid rgb(255, 255, 255); /* Color and thickness of the trajectory */
+    border-radius: 50%; /* Create a circular shape */
+    transform: translateY(-50%); 
+}
+.neptune_orbit {
+    position: fixed; /* Fixed positioning to maintain the trajectory's position */
+    top: 50%; /* Center vertically */
+    left: calc(-1275px); /* Lock the trajectory position to the left edge */
+    width: 2550px; /* Adjust the diameter of the trajectory to be larger */
+    height: 2550px; /* Ensure it's circular */
+    background-color: transparent; /* Transparent background */
+    border: 1px solid rgb(255, 255, 255); /* Color and thickness of the trajectory */
+    border-radius: 50%; /* Create a circular shape */
+    transform: translateY(-50%); 
+}
