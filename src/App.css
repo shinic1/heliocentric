@@ -86,7 +86,7 @@ h1 {
 
   transform: var(--mercury-center) rotate(0deg) var(--mercury-orbit-radius);
 
-  animation: orbitMercury 76s linear infinite;
+  animation: orbitMercury 90s linear infinite;
 }
 
 @keyframes orbitMercury {
@@ -134,7 +134,7 @@ h1 {
 
   transform: var(--venus-center) rotate(0deg) var(--venus-orbit-radius);
 
-  animation: orbitVenus 195s linear infinite; /* Different timing to reflect a larger orbit */
+  animation: orbitVenus 153s linear infinite; /* Different timing to reflect a larger orbit */
 }
 
 @keyframes orbitVenus {
@@ -181,7 +181,7 @@ h1 {
 
   transform: var(--earth-center) rotate(0deg) var(--earth-orbit-radius);
 
-  animation: orbitEarth 315360s linear infinite;
+  animation: orbitEarth 216s linear infinite;
 }
 
 @keyframes orbitEarth {
@@ -228,7 +228,7 @@ h1 {
 
   transform: var(--mars-center) rotate(0deg) var(--mars-orbit-radius);
 
-  animation: orbitMars 593530s linear infinite; /* Slower animation for Mars's larger orbit */
+  animation: orbitMars 279s linear infinite; /* Slower animation for Mars's larger orbit */
 }
 
 @keyframes orbitMars {
@@ -275,7 +275,7 @@ h1 {
 
   transform: var(--jupiter-center) rotate(0deg) var(--jupiter-orbit-radius);
 
-  animation: orbitJupiter 3743357s linear infinite; /* Slower animation for Jupiter's larger orbit */
+  animation: orbitJupiter 342s linear infinite; /* Slower animation for Jupiter's larger orbit */
 }
 
 @keyframes orbitJupiter {
@@ -323,7 +323,7 @@ h1 {
 
   transform: var(--saturn-center) rotate(0deg) var(--saturn-orbit-radius);
 
-  animation: orbitSaturn 9306360s linear infinite; /* Slower animation for Saturn's larger orbit */
+  animation: orbitSaturn 405s linear infinite; /* Slower animation for Saturn's larger orbit */
 }
 
 @keyframes orbitSaturn {
@@ -371,7 +371,7 @@ h1 {
 
   transform: var(--uranus-center) rotate(0deg) var(--uranus-orbit-radius);
 
-  animation: orbitUranus 26510620s linear infinite; /* Slower animation for Uranus's larger orbit */
+  animation: orbitUranus 468s linear infinite; /* Slower animation for Uranus's larger orbit */
 }
 
 @keyframes orbitUranus {
@@ -418,7 +418,7 @@ h1 {
 
   transform: var(--neptune-center) rotate(0deg) var(--neptune-orbit-radius);
 
-  animation: orbitNeptune 51961060s linear infinite; /* Slower animation for Neptune's larger orbit */
+  animation: orbitNeptune 531s linear infinite; /* Slower animation for Neptune's larger orbit */
 }
 
 @keyframes orbitNeptune {
@@ -426,13 +426,13 @@ h1 {
     transform: var(--neptune-center) rotate(0deg) var(--neptune-orbit-radius);
   }
   25% {
-    transform: var(--neptune-center) rotate(90deg) var(--neptune-orbit-radius);
+    transform: var(--neptune-center) rotate(20deg) var(--neptune-orbit-radius);
   }
   50% {
     transform: var(--neptune-center) rotate(0deg) var(--neptune-orbit-radius);
   }
   75% {
-    transform: var(--neptune-center) rotate(-90deg) var(--neptune-orbit-radius);
+    transform: var(--neptune-center) rotate(-20deg) var(--neptune-orbit-radius);
   }
   100% {
     transform: var(--neptune-center) rotate(0deg) var(--neptune-orbit-radius);
@@ -470,6 +470,9 @@ h1 {
 
 .popup_mercury p {
   font-size: 1rem;
+}
+.popup_mercury button{
+  cursor: pointer;
 }
 
 .popup_venus {
@@ -511,5 +514,105 @@ h1 {
 }
 
 .popup_earth p {
+  font-size: 1rem;
+}
+.popup_mars{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  background-color: white;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.popup_mars h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.popup_mars p {
+  font-size: 1rem;
+}
+.popup_jupiter{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  background-color: white;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.popup_jupiter h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.popup_jupiter p {
+  font-size: 1rem;
+}
+.popup_saturn{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  background-color: white;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.popup_saturn h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.popup_saturn p {
+  font-size: 1rem;
+}
+.popup_uranus{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  background-color: white;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.popup_uranus h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.popup_uranus p {
+  font-size: 1rem;
+}
+.popup_neptune{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  background-color: white;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.popup_neptune h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.popup_neptune p {
   font-size: 1rem;
 }

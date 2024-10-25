@@ -22,23 +22,23 @@ function App() {
       ></div>
       <div
         className="mars"
-        //onClick={() => handleClick('Mars')}
+        onClick={() => setOpenPopup('mars')}
       ></div>
       <div
         className="jupiter"
-        //onClick={() => handleClick('Jupiter')}
+        onClick={() => setOpenPopup('jupiter')}
       ></div>
       <div
         className="saturn"
-        //onClick={() => handleClick('Saturn')}
+        onClick={() => setOpenPopup('saturn')}
       ></div>
       <div
         className="uranus"
-        //onClick={() => handleClick('Uranus')}
+        onClick={() => setOpenPopup('uranus')}
       ></div>
       <div
         className="neptune"
-        //onClick={() => handleClick('Neptune')}
+        onClick={() => setOpenPopup('neptune')}
       ></div>
 
       {/* Orbits */}
@@ -70,13 +70,58 @@ function App() {
           <p className="text-sm">Details about venus here.</p>
         </div>
       )}
-            {openPopup==='earth' &&(
+      {openPopup==='earth' &&(
         <div className='popup_earth'>
           <div className="flex flex-row justify-between">
             <h2>Earth Information</h2>
             <button onClick={() => setOpenPopup(null)}>X</button> {/* Close button */}
           </div>
           <p className="text-sm">Details about earth here.</p>
+        </div>
+      )}
+      {openPopup==='mars' &&(
+        <div className='popup_earth'>
+          <div className="flex flex-row justify-between">
+            <h2>Mars Information</h2>
+            <button onClick={() => setOpenPopup(null)}>X</button> {/* Close button */}
+          </div>
+          <p className="text-sm">Details about mars here.</p>
+        </div>
+      )}
+      {openPopup==='jupiter' &&(
+        <div className='popup_earth'>
+          <div className="flex flex-row justify-between">
+            <h2>Jupiter</h2>
+            <button onClick={() => setOpenPopup(null)}>X</button> {/* Close button */}
+          </div>
+          <p className="text-sm">Details about jupiter here.</p>
+        </div>
+      )}
+      {openPopup==='saturn' &&(
+        <div className='popup_earth'>
+          <div className="flex flex-row justify-between">
+            <h2>Saturn</h2>
+            <button onClick={() => setOpenPopup(null)}>X</button> {/* Close button */}
+          </div>
+          <p className="text-sm">Details about saturn here.</p>
+        </div>
+      )}
+      {openPopup==='uranus' &&(
+        <div className='popup_earth'>
+          <div className="flex flex-row justify-between">
+            <h2>Uranus</h2>
+            <button onClick={() => setOpenPopup(null)}>X</button> {/* Close button */}
+          </div>
+          <p className="text-sm">Details about uranus here.</p>
+        </div>
+      )}
+      {openPopup==='neptune' &&(
+        <div className='popup_earth'>
+          <div className="flex flex-row justify-between">
+            <h2>Neptune</h2>
+            <button onClick={() => setOpenPopup(null)}>X</button> {/* Close button */}
+          </div>
+          <p className="text-sm">Details about neptune here.</p>
         </div>
       )}
     </div>
