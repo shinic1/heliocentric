@@ -84,14 +84,14 @@ h1 {
   border-radius: 50%;
   cursor: pointer;
 
-  transform: var(--mercury-center) rotate(0deg) var(--mercury-orbit-radius);
+  transform: var(--mercury-center) rotate(-15deg) var(--mercury-orbit-radius);
 
   animation: orbitMercury 90s linear infinite;
 }
 
 @keyframes orbitMercury {
   0% {
-    transform: var(--mercury-center) rotate(0deg) var(--mercury-orbit-radius);
+    transform: var(--mercury-center) rotate(-15deg) var(--mercury-orbit-radius);
   }
   25% {
     transform: var(--mercury-center) rotate(90deg) var(--mercury-orbit-radius);
@@ -189,13 +189,13 @@ h1 {
     transform: var(--earth-center) rotate(0deg) var(--earth-orbit-radius);
   }
   25% {
-    transform: var(--earth-center) rotate(50deg) var(--earth-orbit-radius);
+    transform: var(--earth-center) rotate(48deg) var(--earth-orbit-radius);
   }
   50% {
     transform: var(--earth-center) rotate(0deg) var(--earth-orbit-radius);
   }
   75% {
-    transform: var(--earth-center) rotate(-50deg) var(--earth-orbit-radius);
+    transform: var(--earth-center) rotate(-48deg) var(--earth-orbit-radius);
   }
   100% {
     transform: var(--earth-center) rotate(0deg) var(--earth-orbit-radius);
@@ -236,13 +236,13 @@ h1 {
     transform: var(--mars-center) rotate(0deg) var(--mars-orbit-radius);
   }
   25% {
-    transform: var(--mars-center) rotate(90deg) var(--mars-orbit-radius);
+    transform: var(--mars-center) rotate(38deg) var(--mars-orbit-radius);
   }
   50% {
     transform: var(--mars-center) rotate(0deg) var(--mars-orbit-radius);
   }
   75% {
-    transform: var(--mars-center) rotate(-90deg) var(--mars-orbit-radius);
+    transform: var(--mars-center) rotate(-38deg) var(--mars-orbit-radius);
   }
   100% {
     transform: var(--mars-center) rotate(0deg) var(--mars-orbit-radius);
@@ -283,13 +283,13 @@ h1 {
     transform: var(--jupiter-center) rotate(0deg) var(--jupiter-orbit-radius);
   }
   25% {
-    transform: var(--jupiter-center) rotate(90deg) var(--jupiter-orbit-radius);
+    transform: var(--jupiter-center) rotate(30deg) var(--jupiter-orbit-radius);
   }
   50% {
     transform: var(--jupiter-center) rotate(0deg) var(--jupiter-orbit-radius);
   }
   75% {
-    transform: var(--jupiter-center) rotate(-90deg) var(--jupiter-orbit-radius);
+    transform: var(--jupiter-center) rotate(-30deg) var(--jupiter-orbit-radius);
   }
   100% {
     transform: var(--jupiter-center) rotate(0deg) var(--jupiter-orbit-radius);
@@ -331,13 +331,13 @@ h1 {
     transform: var(--saturn-center) rotate(0deg) var(--saturn-orbit-radius);
   }
   25% {
-    transform: var(--saturn-center) rotate(90deg) var(--saturn-orbit-radius);
+    transform: var(--saturn-center) rotate(23deg) var(--saturn-orbit-radius);
   }
   50% {
     transform: var(--saturn-center) rotate(0deg) var(--saturn-orbit-radius);
   }
   75% {
-    transform: var(--saturn-center) rotate(-90deg) var(--saturn-orbit-radius);
+    transform: var(--saturn-center) rotate(-23deg) var(--saturn-orbit-radius);
   }
   100% {
     transform: var(--saturn-center) rotate(0deg) var(--saturn-orbit-radius);
@@ -379,13 +379,13 @@ h1 {
     transform: var(--uranus-center) rotate(0deg) var(--uranus-orbit-radius);
   }
   25% {
-    transform: var(--uranus-center) rotate(90deg) var(--uranus-orbit-radius);
+    transform: var(--uranus-center) rotate(20deg) var(--uranus-orbit-radius);
   }
   50% {
     transform: var(--uranus-center) rotate(0deg) var(--uranus-orbit-radius);
   }
   75% {
-    transform: var(--uranus-center) rotate(-90deg) var(--uranus-orbit-radius);
+    transform: var(--uranus-center) rotate(-20deg) var(--uranus-orbit-radius);
   }
   100% {
     transform: var(--uranus-center) rotate(0deg) var(--uranus-orbit-radius);
@@ -416,23 +416,23 @@ h1 {
   border-radius: 50%;
   cursor: pointer;
 
-  transform: var(--neptune-center) rotate(0deg) var(--neptune-orbit-radius);
+  transform: var(--neptune-center) rotate(10deg) var(--neptune-orbit-radius);
 
   animation: orbitNeptune 531s linear infinite; /* Slower animation for Neptune's larger orbit */
 }
 
 @keyframes orbitNeptune {
   0% {
-    transform: var(--neptune-center) rotate(0deg) var(--neptune-orbit-radius);
+    transform: var(--neptune-center) rotate(10deg) var(--neptune-orbit-radius);
   }
   25% {
-    transform: var(--neptune-center) rotate(20deg) var(--neptune-orbit-radius);
+    transform: var(--neptune-center) rotate(17deg) var(--neptune-orbit-radius);
   }
   50% {
     transform: var(--neptune-center) rotate(0deg) var(--neptune-orbit-radius);
   }
   75% {
-    transform: var(--neptune-center) rotate(-20deg) var(--neptune-orbit-radius);
+    transform: var(--neptune-center) rotate(-17deg) var(--neptune-orbit-radius);
   }
   100% {
     transform: var(--neptune-center) rotate(0deg) var(--neptune-orbit-radius);
