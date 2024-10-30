@@ -103,7 +103,7 @@ h1 {
     transform: var(--mercury-center) rotate(-90deg) var(--mercury-orbit-radius);
   }
   100% {
-    transform: var(--mercury-center) rotate(0deg) var(--mercury-orbit-radius);
+    transform: var(--mercury-center) rotate(-15deg) var(--mercury-orbit-radius);
   }
 }
 .mercury_orbit {
@@ -379,13 +379,13 @@ h1 {
     transform: var(--uranus-center) rotate(0deg) var(--uranus-orbit-radius);
   }
   25% {
-    transform: var(--uranus-center) rotate(20deg) var(--uranus-orbit-radius);
+    transform: var(--uranus-center) rotate(19deg) var(--uranus-orbit-radius);
   }
   50% {
     transform: var(--uranus-center) rotate(0deg) var(--uranus-orbit-radius);
   }
   75% {
-    transform: var(--uranus-center) rotate(-20deg) var(--uranus-orbit-radius);
+    transform: var(--uranus-center) rotate(-19deg) var(--uranus-orbit-radius);
   }
   100% {
     transform: var(--uranus-center) rotate(0deg) var(--uranus-orbit-radius);
