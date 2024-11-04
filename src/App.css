@@ -25,6 +25,7 @@ body {
   background-image: url('bg.png');
   background-size: 85%;
   background-position: center;
+  overflow: hidden;
 }
 
 .container {
