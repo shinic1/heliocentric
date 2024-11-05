@@ -40,17 +40,7 @@ h1 {
   font-size: 2rem;
   color: #333;
 }
-/*.dot {
-  height: 250px;
-  width: 250px;
-  position: fixed;
-  left: -125px; 
-  top: 50%;  
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transform: translateY(-50%);
-}*/
+
 .sun {
   --sun-left: calc(-10vw); 
   --sun-top: 50%; 
