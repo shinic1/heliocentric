@@ -541,6 +541,9 @@ h1 {
 
 .popup_mars{
   position: absolute;
+  width: 800px;
+  height: 450px;
+  opacity: 1;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -548,9 +551,10 @@ h1 {
   background-color:#0a0f23;
   color: white;
   padding: 20px;
-  border: 2px solid black;
-  border-radius: 10px;
+  border: 2px solid #0a0f23;
+  border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 .popup_mars h2 {
   margin: 0;
@@ -561,8 +565,26 @@ h1 {
   font-size: 1rem;
 }
 
-.popup_mars button{
+.close_btn{
   cursor: pointer;
+  text-align: right;
+  position: absolute;
+  top: 10px;    /* Adjust as needed for spacing from the top */
+  right: 10px;  /* Adjust as needed for spacing from the right */
+}
+.test_btn{
+  cursor: pointer;
+  bottom: 10px;
+  left: 5px;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  border-color: #50527a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #50527a;
+  border: 2px solid #0a0f23;
+  color: white;
 }
 .popup_jupiter{
   position: absolute;

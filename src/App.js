@@ -56,12 +56,13 @@ function App() {
         </div>
       )}
       {openPopup === 'mars' && (
-        <div className="popup_mars">
-          <div className="flex flex-row justify-between">
+        <div className="popup_mars p-4 rounded bg-white shadow-lg">
+          <div className="flex flex-row justify-between items-center mb-4">
             <h2>Mars Information</h2>
-            <button onClick={() => setOpenPopup(null)}>X</button>
+            <button className="close_btn text-red-500" onClick={() => setOpenPopup(null)}>X</button>
           </div>
           <p className="text-sm">Details about Mars here.</p>
+          <button className="test_btn text-red-500" onClick={() => setOpenPopup(null)}>Y</button>
         </div>
       )}
       {openPopup === 'jupiter' && (
