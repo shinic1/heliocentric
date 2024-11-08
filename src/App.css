@@ -561,10 +561,6 @@ h1 {
   font-size: 1.5rem;
 }
 
-.popup_mars p {
-  font-size: 1rem;
-}
-
 .close_btn{
   cursor: pointer;
   text-align: right;
@@ -580,10 +576,10 @@ h1 {
   height: 50px;
   width: 50px;
   border-radius: 10px;
-  border-color: #50527a;
+  border-color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  background-color: #50527a;
-  border: 2px solid #0a0f23;
+  background-color: #191b40;
+  border: 1px solid #ffffff;
   color: white;
 }
 .popup_jupiter{

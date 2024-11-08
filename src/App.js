@@ -58,11 +58,12 @@ function App() {
       {openPopup === 'mars' && (
         <div className="popup_mars p-4 rounded bg-white shadow-lg">
           <div className="flex flex-row justify-between items-center mb-4">
-            <h2>Mars Information</h2>
+            <h2>Mars</h2>
             <button className="close_btn text-red-500" onClick={() => setOpenPopup(null)}>X</button>
           </div>
-          <p className="text-sm">Details about Mars here.</p>
-          <button className="test_btn text-red-500" onClick={() => setOpenPopup(null)}>Y</button>
+          <p className="text-sm">Mars is a Open-Source Youtube and Tiktok downloader with basic functionalities.</p>
+          <button className="test_btn text-red-500" onClick={() => window.open("https://github.com/shinic1/Mars", "_blank", "noopener,noreferrer")}
+          >Github</button>
         </div>
       )}
       {openPopup === 'jupiter' && (
