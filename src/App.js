@@ -7,7 +7,7 @@ function App() {
   return (
     <div style={{ height: '100vh', width: '100vw' }}>
       {/* Planets */}
-      <div className="sun"></div>
+      <div className="sun" onClick={() => setOpenPopup('sun')}></div>
       <div className="mercury" onClick={() => setOpenPopup('mercury')}></div>
       <div className="venus" onClick={() => setOpenPopup('venus')}></div>
       <div className="earth" onClick={() => setOpenPopup('earth')}></div>
@@ -28,6 +28,15 @@ function App() {
       <div className="neptune_orbit"></div>
 
       {/* Popup for Each Planet */}
+      {openPopup === 'sun' && (
+        <div className="popup_sun">
+          <div className="flex flex-row justify-between">
+            <h2>Sun Information</h2>
+            <button onClick={() => setOpenPopup(null)}>X</button>
+          </div>
+          <p className="text-sm">Details about the Sun here.</p>
+        </div>
+      )}
       {openPopup === 'mercury' && (
         <div className="popup_mercury">
           <div className="flex flex-row justify-between">
@@ -56,16 +65,20 @@ function App() {
         </div>
       )}
       {openPopup === 'mars' && (
-        <div className="popup_mars p-4 rounded bg-white shadow-lg">
-          <div className="flex flex-row justify-between items-center mb-4">
-            <h2>Mars</h2>
-            <button className="close_btn text-red-500" onClick={() => setOpenPopup(null)}>X</button>
-          </div>
-          <p className="text-sm">Mars is a Open-Source Youtube and Tiktok downloader with basic functionalities.</p>
-          <button className="test_btn text-red-500" onClick={() => window.open("https://github.com/shinic1/Mars", "_blank", "noopener,noreferrer")}
-          >Github</button>
-        </div>
-      )}
+  <div className="popup_mars p-4 rounded bg-white shadow-lg">
+    <div className="flex flex-row justify-between items-center mb-4">
+      <h2>Mars</h2>
+      <button className="close_btn text-red-500" onClick={() => setOpenPopup(null)}>X</button>
+    </div>
+    <p className="text-sm">Mars is an Open-Source YouTube and Tiktok downloader with basic functionalities.</p>
+    <button 
+      className="test_btn text-red-500" 
+      onClick={() => window.open("https://github.com/shinic1/Mars", "_blank", "noopener,noreferrer")}>
+      <img src="github.png" alt="github" height={45} width={45} style={{ display: 'block', margin: '0 auto' }} />
+    </button>
+  </div>
+)}
+
       {openPopup === 'jupiter' && (
         <div className="popup_jupiter">
           <div className="flex flex-row justify-between">
