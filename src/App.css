@@ -490,16 +490,26 @@ h1 {
 .popup_sun p {
   font-size: 1rem;
 }
-.close_sun{
-  cursor: pointer;
-  text-align: right;
+.popup_sun img{
+  border-radius: 50%;
+  object-fit: cover;
+}
+.intro{
+  text-align: left;
   position: absolute;
-  top: 10px;    /* Adjust as needed for spacing from the top */
-  right: 10px;  /* Adjust as needed for spacing from the right */
-  background-color: transparent;
-  color: white;
-  border-color: transparent;
-  font-size: 15px;
+  top: 9%;
+  left: 5%;
+}
+.close_sun{
+    cursor: pointer;
+    text-align: right;
+    position: absolute;
+    top: 10px;    /* Adjust as needed for spacing from the top */
+    right: 10px;  /* Adjust as needed for spacing from the right */
+    background-color: transparent;
+    color: white;
+    border-color: transparent;
+    font-size: 15px;
 }
 /* Mercury-specific popup styling */
 .popup_mercury {
@@ -593,6 +603,7 @@ h1 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
+
 .popup_mars h2 {
   margin: 0;
   font-size: 1.5rem;

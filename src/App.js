@@ -31,10 +31,12 @@ function App() {
       {openPopup === 'sun' && (
         <div className="popup_sun">
           <div className="flex flex-row justify-between">
-            <h2>About Me</h2>
+            <h2>Nico Bourel</h2>
             <button className='close_sun' onClick={() => setOpenPopup(null)}>X</button>
           </div>
-          <p className="text-sm">Details about the Sun here.</p>
+          <p className="swe">Aspiring software engineer</p>
+          <img src="Nico.jpg" alt="nico" height={200} width={200}/>
+          <p className="intro">Hey, I'm Nico </p>
         </div>
       )}
       {openPopup === 'mercury' && (
