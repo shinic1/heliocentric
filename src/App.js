@@ -35,7 +35,7 @@ function App() {
             <button className='close_sun' onClick={() => setOpenPopup(null)}>X</button>
           </div>
           <p className="swe">Aspiring software engineer</p>
-          <img src="Nico.jpg" alt="nico" height={200} width={200}/>
+          <img src="Nico_final.jpg" alt="nico" height={200} width={200}/>
           <p className="intro">Hey, I'm Nico </p>
         </div>
       )}
