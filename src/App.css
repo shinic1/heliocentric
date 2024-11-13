@@ -490,9 +490,11 @@ h1 {
 .popup_sun p {
   font-size: 1rem;
 }
-.popup_sun img{
+.nico {
   border-radius: 50%;
   object-fit: cover;
+  display: block;
+  margin: 0 auto; /* Center the image */
 }
 .intro{
   text-align: left;
@@ -511,6 +513,88 @@ h1 {
     border-color: transparent;
     font-size: 15px;
 }
+.linkedin-icon{
+  border-radius: 0;
+}
+.linkedin{
+  cursor: pointer;
+  position: absolute;
+  height: 50px;
+  width: 250px;
+  border-radius: 10px;
+  border-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #191b40;
+  border: 1px solid rgba(255, 255, 255,0.1);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0;
+  text-align: right;
+  top: 20%;
+  right: 5%;
+}
+.linkedin:hover {
+  background-color: white;
+  color: yellow;
+}
+.github-icon{
+  border-radius: 0;
+}
+.github{
+  cursor: pointer;
+  position: absolute;
+  height: 50px;
+  width: 250px;
+  border-radius: 10px;
+  border-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #191b40;
+  border: 1px solid rgba(255, 255, 255,0.1);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0;
+  text-align: right;
+  top: 35%;
+  right: 5%;
+}
+.github:hover {
+  background-color: white;
+  color: yellow;
+}
+.contact-icon{
+  border-radius: 0;
+}
+.contact{
+  cursor: pointer;
+  position: absolute;
+  height: 50px;
+  width: 250px;
+  border-radius: 10px;
+  border-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #191b40;
+  border: 1px solid rgba(255, 255, 255,0.1);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0;
+  text-align: right;
+  top: 50%;
+  right: 5%;
+}
+.contact:hover {
+  background-color: white;
+  color: yellow;
+}
+
 /* Mercury-specific popup styling */
 .popup_mercury {
   position: absolute;

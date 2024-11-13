@@ -35,8 +35,27 @@ function App() {
             <button className='close_sun' onClick={() => setOpenPopup(null)}>X</button>
           </div>
           <p className="swe">Aspiring software engineer</p>
-          <img src="Nico_final.jpg" alt="nico" height={200} width={200}/>
-          <p className="intro">Hey, I'm Nico </p>
+          <img className='nico' src="Nico_final.jpg" alt="nico" height={200} width={200}/>
+          <p className="intro">Hey, I'm Nico. <br />
+          Here is a quick summary: <br />
+          - I study Computer Science at <br /> the University of Wisconsin, Green Bay <br />
+          - I am from Germany <br />
+          </p>
+          <button 
+            className="linkedin" 
+            onClick={() => window.open("https://www.linkedin.com/in/nico-bourel-09237a216/", "_blank")}>
+            <img className='linkedin-icon' src="linkedin.png" alt="linkedin" height={40} width={40} style={{ display: 'block', margin: '0 auto' }} />
+          </button>
+          <button 
+            className="github" 
+            onClick={() => window.open("https://github.com/shinic1", "_blank")}>
+            <img className='github-icon' src="github.png" alt="github" height={40} width={40} style={{ display: 'block', margin: '0 auto' }} />
+          </button>
+          <button 
+            className="contact" 
+            onClick={() => window.location = 'mailto:nico.bourel@swedev.online'}>
+            <img className='contact-icon' src="mail.png" alt="contact" height={40} width={40} style={{ display: 'block', margin: '0 auto' }} />
+          </button>
         </div>
       )}
       {openPopup === 'mercury' && (
