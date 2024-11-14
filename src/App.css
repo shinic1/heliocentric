@@ -113,10 +113,10 @@ h1 {
   border-radius: 50%; 
   transform: translateY(-50%); 
 }
-/* Venus */
+
 .venus {
   --venus-center: translate(-50%, -50%);
-  --venus-orbit-radius: translateX(375px); /* Venus orbit radius is larger */
+  --venus-orbit-radius: translateX(375px);
 
   z-index: 2;
   position: absolute;
@@ -133,7 +133,7 @@ h1 {
 
   transform: var(--venus-center) rotate(0deg) var(--venus-orbit-radius);
 
-  animation: orbitVenus 153s linear infinite; /* Different timing to reflect a larger orbit */
+  animation: orbitVenus 153s linear infinite;
 }
 
 @keyframes orbitVenus {
@@ -154,19 +154,19 @@ h1 {
   }
 }
 .venus_orbit {
-  position: fixed; /* Fixed positioning to maintain the trajectory's position */
-  top: 50%; /* Center vertically */
-  left: calc(-375px); /* Lock the trajectory position to the left edge */
-  width: 750px; /* Adjust the diameter of the trajectory to be larger */
-  height: 750px; /* Ensure it's circular */
-  background-color: transparent; /* Transparent background */
-  border: 1px solid rgb(255, 255, 255); /* Color and thickness of the trajectory */
-  border-radius: 50%; /* Create a circular shape */
+  position: fixed; 
+  top: 50%;
+  left: calc(-375px);
+  width: 750px;
+  height: 750px;
+  background-color: transparent;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50%; 
   transform: translateY(-50%); 
 }
 .earth {
   --earth-center: translate(-50%, -50%);
-  --earth-orbit-radius: translateX(500px); /* Earth orbit radius is even larger */
+  --earth-orbit-radius: translateX(500px);
 
   z-index: 2;
   position: absolute;
@@ -174,7 +174,7 @@ h1 {
   left: 0;
   width: 115px;
   height: 115px;
-  background-color: rgba(0, 123, 255,0); /* Blue color for Earth */
+  background-color: rgba(0, 123, 255,0);
   border-radius: 50%;
   cursor: pointer;
   background-image: url('Earth.png');
@@ -204,19 +204,19 @@ h1 {
   }
 }
 .earth_orbit {
-  position: fixed; /* Fixed positioning to maintain the trajectory's position */
-  top: 50%; /* Center vertically */
-  left: calc(-500px); /* Lock the trajectory position to the left edge */
-  width: 1000px; /* Adjust the diameter of the trajectory to be larger */
-  height: 1000px; /* Ensure it's circular */
-  background-color: transparent; /* Transparent background */
-  border: 1px solid rgb(255, 255, 255); /* Color and thickness of the trajectory */
-  border-radius: 50%; /* Create a circular shape */
+  position: fixed;
+  top: 50%; 
+  left: calc(-500px); 
+  width: 1000px; 
+  height: 1000px;
+  background-color: transparent;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50%;
   transform: translateY(-50%); 
 }
 .mars {
   --mars-center: translate(-50%, -50%);
-  --mars-orbit-radius: translateX(600px); /* Mars orbit radius is larger than Earth */
+  --mars-orbit-radius: translateX(600px);
 
   z-index: 2;
   position: absolute;
@@ -224,7 +224,7 @@ h1 {
   left: 0;
   width: 75px;
   height: 75px;
-  background-color: rgb(255, 99, 71); /* Red color for Mars */
+  background-color: rgb(255, 99, 71);
   border-radius: 50%;
   cursor: pointer;
 
@@ -233,7 +233,7 @@ h1 {
   background-size: cover;
   background-position: center;
 
-  animation: orbitMars 279s linear infinite; /* Slower animation for Mars's larger orbit */
+  animation: orbitMars 279s linear infinite;
 }
 
 @keyframes orbitMars {
@@ -254,19 +254,19 @@ h1 {
   }
 }
 .mars_orbit {
-  position: fixed; /* Fixed positioning to maintain the trajectory's position */
-  top: 50%; /* Center vertically */
-  left: calc(-600px); /* Lock the trajectory position to the left edge */
-  width: 1200px; /* Adjust the diameter of the trajectory to be larger */
-  height: 1200px; /* Ensure it's circular */
-  background-color: transparent; /* Transparent background */
-  border: 1px solid rgb(255, 255, 255); /* Color and thickness of the trajectory */
-  border-radius: 50%; /* Create a circular shape */
+  position: fixed; 
+  top: 50%;
+  left: calc(-600px);
+  width: 1200px; 
+  height: 1200px;
+  background-color: transparent; 
+  border: 1px solid rgb(255, 255, 255); 
+  border-radius: 50%; 
   transform: translateY(-50%); 
 }
 .jupiter {
   --jupiter-center: translate(-50%, -50%);
-  --jupiter-orbit-radius: translateX(775px); /* Jupiter orbit radius is larger than Mars */
+  --jupiter-orbit-radius: translateX(775px);
 
   z-index: 2;
   position: absolute;
@@ -274,7 +274,7 @@ h1 {
   left: 0;
   width: 180px;
   height: 180px;
-  background-color: rgb(205, 133, 63); /* Brown color for Jupiter */
+  background-color: rgb(205, 133, 63);
   border-radius: 50%;
   cursor: pointer;
   background-image: url('Jupiter.png');
@@ -283,7 +283,7 @@ h1 {
 
   transform: var(--jupiter-center) rotate(0deg) var(--jupiter-orbit-radius);
 
-  animation: orbitJupiter 342s linear infinite; /* Slower animation for Jupiter's larger orbit */
+  animation: orbitJupiter 342s linear infinite;
 }
 
 @keyframes orbitJupiter {
@@ -305,27 +305,26 @@ h1 {
 }
 
 .jupiter_orbit {
-  position: fixed; /* Fixed positioning to maintain the trajectory's position */
-  top: 50%; /* Center vertically */
-  left: calc(-775px); /* Lock the trajectory position to the left edge */
-  width: 1550px; /* Adjust the diameter of the trajectory to be larger */
-  height: 1550px; /* Ensure it's circular */
-  background-color: transparent; /* Transparent background */
-  border: 1px solid rgb(255, 255, 255); /* Color and thickness of the trajectory */
-  border-radius: 50%; /* Create a circular shape */
+  position: fixed; 
+  top: 50%; 
+  left: calc(-775px);
+  width: 1550px;
+  height: 1550px;
+  background-color: transparent;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50%;
   transform: translateY(-50%); 
 }
 .saturn {
   --saturn-center: translate(-50%, -50%);
-  --saturn-orbit-radius: translateX(975px); /* Saturn orbit radius is larger than Jupiter */
-
+  --saturn-orbit-radius: translateX(975px);
   z-index: 2;
   position: absolute;
   top: 50%;
   left: 0;
   width: 150px;
   height: 150px;
-  background-color: rgba(218, 165, 32,0); /* Gold color for Saturn */
+  background-color: rgba(218, 165, 32,0);
   border-radius: 50%;
   cursor: pointer;
   background-image: url('Saturn.png');
@@ -334,7 +333,7 @@ h1 {
 
   transform: var(--saturn-center) rotate(0deg) var(--saturn-orbit-radius);
 
-  animation: orbitSaturn 405s linear infinite; /* Slower animation for Saturn's larger orbit */
+  animation: orbitSaturn 405s linear infinite;
 }
 
 @keyframes orbitSaturn {
@@ -355,20 +354,20 @@ h1 {
   }
 }
 .saturn_orbit {
-  position: fixed; /* Fixed positioning to maintain the trajectory's position */
-  top: 50%; /* Center vertically */
-  left: calc(-975px); /* Lock the trajectory position to the left edge */
-  width: 1950px; /* Adjust the diameter of the trajectory to be larger */
-  height: 1950px; /* Ensure it's circular */
-  background-color: transparent; /* Transparent background */
-  border: 1px solid rgb(255, 255, 255); /* Color and thickness of the trajectory */
-  border-radius: 50%; /* Create a circular shape */
+  position: fixed;  
+  top: 50%; 
+  left: calc(-975px);  
+  width: 1950px;  
+  height: 1950px; 
+  background-color: transparent; 
+  border: 1px solid rgb(255, 255, 255); 
+  border-radius: 50%; 
   transform: translateY(-50%); 
   cursor: pointer;
 }
 .uranus {
   --uranus-center: translate(-50%, -50%);
-  --uranus-orbit-radius: translateX(1125px); /* Uranus orbit radius is larger than Saturn */
+  --uranus-orbit-radius: translateX(1125px);  
 
   z-index: 2;
   position: absolute;
@@ -376,7 +375,7 @@ h1 {
   left: 0;
   width: 85px;
   height: 85px;
-  background-color: rgba(173, 216, 230,0); /* Light blue color for Uranus */
+  background-color: rgba(173, 216, 230,0); 
   border-radius: 50%;
   cursor: pointer;
   background-image: url('Uranus.png');
@@ -385,7 +384,7 @@ h1 {
 
   transform: var(--uranus-center) rotate(0deg) var(--uranus-orbit-radius);
 
-  animation: orbitUranus 468s linear infinite; /* Slower animation for Uranus's larger orbit */
+  animation: orbitUranus 468s linear infinite; 
 }
 
 @keyframes orbitUranus {
@@ -406,27 +405,27 @@ h1 {
   }
 }
 .uranus_orbit {
-  position: fixed; /* Fixed positioning to maintain the trajectory's position */
-  top: 50%; /* Center vertically */
-  left: calc(-1125px); /* Lock the trajectory position to the left edge */
-  width: 2250px; /* Adjust the diameter of the trajectory to be larger */
-  height: 2250px; /* Ensure it's circular */
-  background-color: transparent; /* Transparent background */
-  border: 1px solid rgb(255, 255, 255); /* Color and thickness of the trajectory */
-  border-radius: 50%; /* Create a circular shape */
+  position: fixed; 
+  top: 50%; 
+  left: calc(-1125px); 
+  width: 2250px; 
+  height: 2250px; 
+  background-color: transparent; 
+  border: 1px solid rgb(255, 255, 255); 
+  border-radius: 50%; 
   transform: translateY(-50%); 
 }
 .neptune {
   --neptune-center: translate(-50%, -50%);
-  --neptune-orbit-radius: translateX(1275px); /* Neptune orbit radius is larger than Uranus */
+  --neptune-orbit-radius: translateX(1275px); 
 
   z-index: 2;
   position: absolute;
   top: 50%;
   left: 0;
-  width: 80px; /* Adjust the size of Neptune */
-  height: 80px; /* Adjust the size of Neptune */
-  background-color: rgb(70, 130, 180); /* Light blue color for Neptune */
+  width: 80px; 
+  height: 80px; 
+  background-color: rgb(70, 130, 180); 
   border-radius: 50%;
   cursor: pointer;
   background-image: url('Neptune.png');
@@ -435,7 +434,7 @@ h1 {
 
   transform: var(--neptune-center) rotate(10deg) var(--neptune-orbit-radius);
 
-  animation: orbitNeptune 531s linear infinite; /* Slower animation for Neptune's larger orbit */
+  animation: orbitNeptune 531s linear infinite; 
 }
 
 @keyframes orbitNeptune {
@@ -456,14 +455,14 @@ h1 {
   }
 }
 .neptune_orbit {
-  position: fixed; /* Fixed positioning to maintain the trajectory's position */
-  top: 50%; /* Center vertically */
-  left: calc(-1275px); /* Lock the trajectory position to the left edge */
-  width: 2550px; /* Adjust the diameter of the trajectory to be larger */
-  height: 2550px; /* Ensure it's circular */
-  background-color: transparent; /* Transparent background */
-  border: 1px solid rgb(255, 255, 255); /* Color and thickness of the trajectory */
-  border-radius: 50%; /* Create a circular shape */
+  position: fixed;  
+  top: 50%; 
+  left: calc(-1275px); 
+  width: 2550px; 
+  height: 2550px; 
+  background-color: transparent; 
+  border: 1px solid rgb(255, 255, 255); 
+  border-radius: 50%; 
   transform: translateY(-50%); 
 }
 .popup_sun{
@@ -494,7 +493,7 @@ h1 {
   border-radius: 50%;
   object-fit: cover;
   display: block;
-  margin: 0 auto; /* Center the image */
+  margin: 0 auto; 
 }
 .intro{
   text-align: left;
@@ -506,8 +505,8 @@ h1 {
     cursor: pointer;
     text-align: right;
     position: absolute;
-    top: 10px;    /* Adjust as needed for spacing from the top */
-    right: 10px;  /* Adjust as needed for spacing from the right */
+    top: 10px;    
+    right: 10px;  
     background-color: transparent;
     color: white;
     border-color: transparent;
@@ -515,30 +514,37 @@ h1 {
 }
 .linkedin-icon{
   border-radius: 0;
+  padding-left: 0; 
 }
-.linkedin{
+.linkedin-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px; 
+  padding-left: 10px; 
+  width: 100%; 
+}
+.linkedin {
   cursor: pointer;
   position: absolute;
   height: 50px;
   width: 250px;
   border-radius: 10px;
-  border-color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   background-color: #191b40;
-  border: 1px solid rgba(255, 255, 255,0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   color: white;
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  padding: 0;
-  text-align: right;
+  justify-content: flex-start;  
+  padding-left: 10px;           
+  gap: 10px;                
   top: 20%;
   right: 5%;
 }
 .linkedin:hover {
-  background-color: white;
-  color: yellow;
+  background-color: #21234a;
+  color: white;
 }
 .github-icon{
   border-radius: 0;
@@ -564,8 +570,8 @@ h1 {
   right: 5%;
 }
 .github:hover {
-  background-color: white;
-  color: yellow;
+  background-color: #21234a;
+  color: white;
 }
 .contact-icon{
   border-radius: 0;
@@ -591,11 +597,11 @@ h1 {
   right: 5%;
 }
 .contact:hover {
-  background-color: white;
-  color: yellow;
+  background-color: #21234a;
+  color: white;
 }
 
-/* Mercury-specific popup styling */
+ Mercury-specific popup styling */
 .popup_mercury {
   position: absolute;
   top: 50%;
@@ -697,8 +703,8 @@ h1 {
   cursor: pointer;
   text-align: right;
   position: absolute;
-  top: 10px;    /* Adjust as needed for spacing from the top */
-  right: 10px;  /* Adjust as needed for spacing from the right */
+  top: 10px;
+  right: 10px;  
   background-color: transparent;
   color: white;
   border-color: transparent;
@@ -724,8 +730,8 @@ h1 {
   padding: 0;
 }
 .test_btn:hover {
-  background-color: white;
-  color: yellow;
+  background-color: #21234a;
+  color: white;
 }
 .popup_jupiter{
   position: absolute;

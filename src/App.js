@@ -44,7 +44,10 @@ function App() {
           <button 
             className="linkedin" 
             onClick={() => window.open("https://www.linkedin.com/in/nico-bourel-09237a216/", "_blank")}>
+            <div className='linkedin-content'>
             <img className='linkedin-icon' src="linkedin.png" alt="linkedin" height={40} width={40} style={{ display: 'block', margin: '0 auto' }} />
+            <span>LinkedIn</span>
+            </div>
           </button>
           <button 
             className="github" 
