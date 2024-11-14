@@ -600,7 +600,98 @@ h1 {
   background-color: #21234a;
   color: white;
 }
-
+.stack {
+  position: relative;
+  display: flex; /* Use flex if you want multiple figures side-by-side */
+}
+.react{
+  text-align: center; /* Center aligns text below each image */
+  position: relative;
+  left: -4%; /* Moves the entire figure to the left by 5% */
+  margin-top: 90px;
+}
+.reactfig{
+  width: 55px;
+  height: 55px;   
+  object-fit: contain;
+}
+.html{
+  text-align: center; /* Center aligns text below each image */
+  position: relative;
+  left: -9%; /* Moves the entire figure to the left by 5% */
+  margin-top: 85px;
+}
+.htmlfig{
+  width: 60px;
+  height: 60px;   
+  object-fit: contain;
+}
+.css{
+  text-align: center; /* Center aligns text below each image */
+  position: relative;
+  left: -14%; /* Moves the entire figure to the left by 5% */
+  margin-top: 85px;
+}
+.cssfig{
+  width: 60px;
+  height: 60px;   
+  object-fit: contain;
+}
+.java{
+  text-align: center; /* Center aligns text below each image */
+  position: relative;
+  left: -19%; /* Moves the entire figure to the left by 5% */
+  margin-top: 85px;
+}
+.javafig{
+  width: 60px;
+  height: 60px;   
+  object-fit: contain;
+}
+.python{
+  text-align: center; /* Center aligns text below each image */
+  position: relative;
+  left: -24%; /* Moves the entire figure to the left by 5% */
+  margin-top: 85px;
+}
+.pythonfig{
+  width: 60px;
+  height: 60px;   
+  object-fit: contain;
+}
+.rstudio{
+  text-align: center; /* Center aligns text below each image */
+  position: relative;
+  left: -28%; /* Moves the entire figure to the left by 5% */
+  margin-top: 85px;
+}
+.rstudiofig{
+  width: 60px;
+  height: 60px;   
+  object-fit: contain;
+}
+.git{
+  text-align: center; /* Center aligns text below each image */
+  position: relative;
+  left: -32%; /* Moves the entire figure to the left by 5% */
+  margin-top: 85px;
+}
+.gitfig{
+  width: 60px;
+  height: 60px;   
+  object-fit: contain;
+}
+.android_studio{
+  text-align: center; /* Center aligns text below each image */
+  position: relative;
+  left: -37%; /* Moves the entire figure to the left by 5% */
+  margin-top: 85px;
+}
+.android_studiofig{
+  width: 60px;
+  height: 60px;   
+  object-fit: contain;
+}
 .popup_mercury {
   position: absolute;
   top: 50%;

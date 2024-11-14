@@ -59,6 +59,40 @@ function App() {
             onClick={() => window.location = 'mailto:nico.bourel@swedev.online'}>
             <img className='contact-icon' src="mail.png" alt="contact" height={40} width={40} style={{ display: 'block', margin: '0 auto' }} />
           </button>
+          <div className="stack"> 
+            <figure className='react'>
+              <img className='reactfig' src="react.png" alt="react" width={55} />
+              <figcaption>React</figcaption>
+            </figure>
+            <figure className='html'>
+              <img className='htmlfig' src="html.png" alt="css" width={60} />
+              <figcaption>HTML</figcaption>
+            </figure>
+            <figure className='css'>
+              <img className='cssfig' src="css.png" alt="css" width={60} />
+              <figcaption>CSS</figcaption> 
+            </figure>
+            <figure className='java'>
+              <img className='javafig' src="java.png" alt="java" width={60} />
+              <figcaption>Java</figcaption> 
+            </figure>
+            <figure className='python'>
+              <img className='pythonfig' src="python.png" alt="python" width={60} />
+              <figcaption>Python</figcaption> 
+            </figure>    
+            <figure className='rstudio'>
+              <img className='rstudiofig' src="rstudio.png" alt="rstudio" width={60} />
+              <figcaption>R-studio</figcaption> 
+            </figure>
+            <figure className='git'>
+              <img className='gitfig' src="git.png" alt="git" width={60} />
+              <figcaption>Git</figcaption> 
+            </figure>
+            <figure className='android_studio'>
+              <img className='android_studiofig' src="android_studio.png" alt="android_studio" width={60} />
+              <figcaption>Android Studio</figcaption> 
+            </figure>
+          </div>
         </div>
       )}
       {openPopup === 'mercury' && (
