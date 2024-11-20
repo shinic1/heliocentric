@@ -1,8 +1,29 @@
 import './App.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function App() {
   const [openPopup, setOpenPopup] = useState(null); // Dynamic state
+  useEffect(() => {
+    const images = [
+      "Nico_final.jpg",
+      "linkedin.png",
+      "github.png",
+      "mail.png",
+      "react.png",
+      "html.png",
+      "css.png",
+      "java.png",
+      "python.png",
+      "rstudio.png",
+      "git.png",
+      "android_studio.png"
+    ];
+
+    images.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, []);
 
   return (
     <div style={{ height: '100vh', width: '100vw' }}>
