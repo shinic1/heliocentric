@@ -500,6 +500,8 @@ h1 {
   position: absolute;
   top: 10%;
   left: 5%;
+  line-height: 2;
+  text-align: center;
 }
 .close_sun{
     cursor: pointer;
