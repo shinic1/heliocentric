@@ -22,6 +22,8 @@ function App() {
     images.forEach((src) => {
       const img = new Image();
       img.src = src;
+      img.onload = () => console.log(`Image preloaded: ${src}`);
+      img.onerror = () => console.error(`Failed to preload: ${src}`);
     });
   }, []);
 
