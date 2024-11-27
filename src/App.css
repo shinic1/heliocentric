@@ -172,14 +172,15 @@ h1 {
   position: absolute;
   top: 50%;
   left: 0;
-  width: 115px;
-  height: 115px;
+  width: 145px;
+  height: 145px;
   background-color: rgba(0, 123, 255,0);
   border-radius: 50%;
   cursor: pointer;
   background-image: url('Earth.png');
-  background-size: cover;
-  background-position: center;
+  background-size: 75%; /* Ensure the full image, including rings, is visible */
+  background-repeat: no-repeat; /* Prevent tiling of the background image */
+  background-position: center center;
 
   transform: var(--earth-center) rotate(0deg) var(--earth-orbit-radius);
 
@@ -322,20 +323,20 @@ h1 {
   position: absolute;
   top: 50%;
   left: 0;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   background-color: rgba(218, 165, 32,0);
   border-radius: 50%;
   cursor: pointer;
   background-image: url('Saturn.png');
-  background-size: cover;
-  background-position: center;
+  background-size: 85%; /* Ensure the full image, including rings, is visible */
+  background-repeat: no-repeat; /* Prevent tiling of the background image */
+  background-position: center center;
 
   transform: var(--saturn-center) rotate(0deg) var(--saturn-orbit-radius);
 
   animation: orbitSaturn 405s linear infinite;
 }
-
 @keyframes orbitSaturn {
   0% {
     transform: var(--saturn-center) rotate(0deg) var(--saturn-orbit-radius);
@@ -373,14 +374,15 @@ h1 {
   position: absolute;
   top: 50%;
   left: 0;
-  width: 85px;
-  height: 85px;
+  width: 125px;
+  height: 125px;
   background-color: rgba(173, 216, 230,0); 
   border-radius: 50%;
   cursor: pointer;
   background-image: url('Uranus.png');
-  background-size: contain;
-  background-position: center;
+  background-size: 75%; /* Ensure the full image, including rings, is visible */
+  background-repeat: no-repeat; /* Prevent tiling of the background image */
+  background-position: center center;
 
   transform: var(--uranus-center) rotate(0deg) var(--uranus-orbit-radius);
 
@@ -514,14 +516,19 @@ h1 {
     border-color: transparent;
     font-size: 15px;
 }
-.linkedin-icon{
-  border-radius: 0;
-  padding-left: 0; 
+.linkedin-icon {
+  height: 40px; /* Set consistent height */
+  width: 40px;  /* Set consistent width */
+  margin: 0; /* Remove unnecessary margins */
+  display: block; /* Prevent inline alignment issues */
 }
+.linkedin img{
+  display: block;
+}
+
 .linkedin-content {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   gap: 10px; 
   padding-left: 10px; 
   width: 100%; 
@@ -536,20 +543,34 @@ h1 {
   background-color: #191b40;
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: white;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;  
-  padding-left: 10px;           
-  gap: 10px;                
+  display: flex; /* Flex layout for alignment */
+  align-items: center; /* Vertical alignment */
+  justify-content: flex-start; /* Ensure items align left */
+  padding-left: 10px; /* Space between edge and content */
+  gap: 30px; /* Space between icon and text */
   top: 20%;
   right: 5%;
 }
+
 .linkedin:hover {
   background-color: #21234a;
   color: white;
 }
 .github-icon{
-  border-radius: 0;
+  height: 60px; /* Set consistent height */
+  width: 60px;  /* Set consistent width */
+  margin: -10px; /* Remove unnecessary margins */
+  display: block; /* Prevent inline alignment issues */
+}
+.github img{
+  display: block;
+}
+.github-content {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  padding-left: 10px; 
+  width: 100%; 
 }
 .github{
   cursor: pointer;
@@ -557,17 +578,15 @@ h1 {
   height: 50px;
   width: 250px;
   border-radius: 10px;
-  border-color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   background-color: #191b40;
-  border: 1px solid rgba(255, 255, 255,0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  padding: 0;
-  text-align: right;
+  display: flex; /* Flex layout for alignment */
+  align-items: center; /* Vertical alignment */
+  justify-content: flex-start; /* Ensure items align left */
+  padding-left: 10px; /* Space between edge and content */
+  gap: 30px;
   top: 35%;
   right: 5%;
 }
@@ -576,7 +595,20 @@ h1 {
   color: white;
 }
 .contact-icon{
-  border-radius: 0;
+  height: 40px; /* Set consistent height */
+  width: 40px;  /* Set consistent width */
+  margin: 5px; /* Remove unnecessary margins */
+  display: block; /* Prevent inline alignment issues */
+}
+.contact img{
+  display: block;
+}
+.contact-content {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  padding-left: 10px; 
+  width: 100%; 
 }
 .contact{
   cursor: pointer;
@@ -584,17 +616,14 @@ h1 {
   height: 50px;
   width: 250px;
   border-radius: 10px;
-  border-color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   background-color: #191b40;
-  border: 1px solid rgba(255, 255, 255,0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  padding: 0;
-  text-align: right;
+  display: flex; /* Flex layout for alignment */
+  align-items: center; /* Vertical alignment */
+  justify-content: flex-start; 
+  gap: 24px;
   top: 50%;
   right: 5%;
 }

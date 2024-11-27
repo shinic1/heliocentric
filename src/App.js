@@ -68,20 +68,20 @@ function App() {
           <button 
             className="linkedin" 
             onClick={() => window.open("https://www.linkedin.com/in/nico-bourel-09237a216/", "_blank")}>
-            <div className='linkedin-content'>
-            <img className='linkedin-icon' src="linkedin.png" alt="linkedin" height={40} width={40} style={{ display: 'block', margin: '0 auto' }} />
-            <span>LinkedIn</span>
-            </div>
+            <img className='linkedin-icon' src="linkedin.png" alt="linkedin" height={40} width={40}/>
+            <span className='linkedin-font'>LinkedIn</span>
           </button>
           <button 
             className="github" 
             onClick={() => window.open("https://github.com/shinic1", "_blank")}>
-            <img className='github-icon' src="github.png" alt="github" height={40} width={40} style={{ display: 'block', margin: '0 auto' }} />
+            <img className='github-icon' src="github.png" alt="github" height={40} width={40} />
+            <span className='github-font'>Github</span>
           </button>
           <button 
             className="contact" 
             onClick={() => window.location = 'mailto:nico.bourel@swedev.online'}>
-            <img className='contact-icon' src="mail.png" alt="contact" height={40} width={40} style={{ display: 'block', margin: '0 auto' }} />
+            <img className='contact-icon' src="mail.png" alt="contact" height={40} width={40} />
+            <span className='contact-font'>Contact</span>
           </button>
           <div className="stack"> 
             <figure className='react'>
