@@ -281,6 +281,8 @@ h1 {
   background-image: url('Jupiter.png');
   background-size: cover;
   background-position: center;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 
   transform: var(--jupiter-center) rotate(0deg) var(--jupiter-orbit-radius);
 
@@ -332,6 +334,8 @@ h1 {
   background-size: 85%; /* Ensure the full image, including rings, is visible */
   background-repeat: no-repeat; /* Prevent tiling of the background image */
   background-position: center center;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 
   transform: var(--saturn-center) rotate(0deg) var(--saturn-orbit-radius);
 
@@ -383,6 +387,8 @@ h1 {
   background-size: 75%; /* Ensure the full image, including rings, is visible */
   background-repeat: no-repeat; /* Prevent tiling of the background image */
   background-position: center center;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 
   transform: var(--uranus-center) rotate(0deg) var(--uranus-orbit-radius);
 
@@ -433,6 +439,8 @@ h1 {
   background-image: url('Neptune.png');
   background-size: cover;
   background-position: center;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 
   transform: var(--neptune-center) rotate(10deg) var(--neptune-orbit-radius);
 
