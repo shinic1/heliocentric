@@ -968,7 +968,7 @@ h1 {
   position: center;
   display: flex;
 }
-.show1 .show2{
+.show1{
   width: '350px';
   height: '250px';
   background-color: 'transparent';
@@ -976,11 +976,16 @@ h1 {
   position: center;
   display: block;
   object-fit: cover; /* Ensures the image retains its aspect ratio */
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #21234a;
+  border-width: 5px;
+
 }
 .image-container {
   display: flex; /* Use flexbox to align items in a row */
   gap: 20px; /* Space between images */
   justify-content: center; /* Center images horizontally */
   align-items: center; /* Align images vertically */
-  margin-top: 10%;
+  margin-top: 1%;
 }

@@ -127,8 +127,7 @@ function App() {
           </div>
           <p className="text-sm">Motus is an emotion detection project that uses AI to analyze the emotion of a sentence.</p>
           <div className="image-container">
-          <img className='show1' src="motus_example_1.png" alt="motus" height={186} width={350} />
-          <img className='show2' src="motus_example_2.png" alt="motus" height={186} width={350} />
+          <img className='show1' src="motus_example_1.png" alt="motus" height={293} width={550} />
           </div>
           <button 
             className="test_btn text-red-500" 
