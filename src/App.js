@@ -140,18 +140,31 @@ function App() {
         <div className="popup_venus">
           <div className="flex flex-row justify-between">
             <h2>Venus Information</h2>
-            <button onClick={() => setOpenPopup(null)}>X</button>
+            <button className='close_btn' onClick={() => setOpenPopup(null)}>X</button>
           </div>
           <p className="text-sm">Details about Venus here.</p>
+          <div className="image-container">
+          <img className='show1' src="database_example_1.png" alt="database" height={293} width={550} />
+          </div>
+          <button 
+            className="test_btn text-red-500" 
+            onClick={() => window.open("https://github.com/shinic1/FinanceAPP", "_blank", "noopener,noreferrer")}>
+            <img src="github.png" alt="github" height={45} width={45} style={{ display: 'block', margin: '0 auto' }} />
+          </button>
         </div>
       )}
       {openPopup === 'earth' && (
         <div className="popup_earth">
           <div className="flex flex-row justify-between">
             <h2>Earth Information</h2>
-            <button onClick={() => setOpenPopup(null)}>X</button>
+            <button className='close_btn' onClick={() => setOpenPopup(null)}>X</button>
           </div>
           <p className="text-sm">Details about Earth here.</p>
+          <button 
+            className="test_btn text-red-500" 
+            onClick={() => window.open("https://github.com/shinic1/FinanceAPP", "_blank", "noopener,noreferrer")}>
+            <img src="github.png" alt="github" height={45} width={45} style={{ display: 'block', margin: '0 auto' }} />
+          </button>
         </div>
       )}
       {openPopup === 'mars' && (
@@ -168,7 +181,7 @@ function App() {
           </button>
         </div>
       )}
-      {openPopup === 'jupiter' && (
+      {/*{openPopup === 'jupiter' && (
         <div className="popup_jupiter">
           <div className="flex flex-row justify-between">
             <h2>Jupiter Information</h2>
@@ -203,7 +216,7 @@ function App() {
           </div>
           <p className="text-sm">Details about Neptune here.</p>
         </div>
-      )}
+      )} */}
     </div>
   );
 }
