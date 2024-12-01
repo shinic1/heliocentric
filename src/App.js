@@ -89,7 +89,7 @@ function App() {
               <figcaption>React</figcaption>
             </figure>
             <figure className='html'>
-              <img className='htmlfig' src="html.png" alt="css" width={60} />
+              <img className='htmlfig' src="html.png" alt="html" width={60} />
               <figcaption>HTML</figcaption>
             </figure>
             <figure className='css'>
@@ -102,19 +102,19 @@ function App() {
             </figure>
             <figure className='python'>
               <img className='pythonfig' src="python.png" alt="python" width={60} />
-              <figcaption>Python</figcaption> 
-            </figure>    
+              <figcaption>Python</figcaption>
+            </figure>
             <figure className='rstudio'>
               <img className='rstudiofig' src="rstudio.png" alt="rstudio" width={60} />
-              <figcaption>R-studio</figcaption> 
+              <figcaption>R-studio</figcaption>
             </figure>
             <figure className='git'>
               <img className='gitfig' src="git.png" alt="git" width={60} />
-              <figcaption>Git</figcaption> 
+              <figcaption>Git</figcaption>
             </figure>
             <figure className='android_studio'>
               <img className='android_studiofig' src="android_studio.png" alt="android_studio" width={60} />
-              <figcaption>Android Studio</figcaption> 
+              <figcaption>Android Studio</figcaption>
             </figure>
           </div>
         </div>
@@ -139,24 +139,19 @@ function App() {
       {openPopup === 'venus' && (
         <div className="popup_venus">
           <div className="flex flex-row justify-between">
-            <h2>Venus Information</h2>
+            <h2>Ultimate Retreats</h2>
             <button className='close_btn' onClick={() => setOpenPopup(null)}>X</button>
           </div>
           <p className="text-sm">Details about Venus here.</p>
           <div className="image-container">
           <img className='show1' src="database_example_1.png" alt="database" height={293} width={550} />
           </div>
-          <button 
-            className="test_btn text-red-500" 
-            onClick={() => window.open("https://github.com/shinic1/FinanceAPP", "_blank", "noopener,noreferrer")}>
-            <img src="github.png" alt="github" height={45} width={45} style={{ display: 'block', margin: '0 auto' }} />
-          </button>
         </div>
       )}
       {openPopup === 'earth' && (
         <div className="popup_earth">
           <div className="flex flex-row justify-between">
-            <h2>Earth Information</h2>
+            <h2>Pecunia</h2>
             <button className='close_btn' onClick={() => setOpenPopup(null)}>X</button>
           </div>
           <p className="text-sm">Details about Earth here.</p>
