@@ -122,10 +122,19 @@ function App() {
       {openPopup === 'mercury' && (
         <div className="popup_mercury">
           <div className="flex flex-row justify-between">
-            <h2>Mercury Information</h2>
-            <button onClick={() => setOpenPopup(null)}>X</button>
+          <h2>Motus</h2>
+            <button className="close_btn text-red-500" onClick={() => setOpenPopup(null)}>X</button>
           </div>
-          <p className="text-sm">Details about Mercury here.</p>
+          <p className="text-sm">Motus is an emotion detection project that uses AI to analyze the emotion of a sentence.</p>
+          <div className="image-container">
+          <img className='show1' src="motus_example_1.png" alt="motus" height={186} width={350} />
+          <img className='show2' src="motus_example_2.png" alt="motus" height={186} width={350} />
+          </div>
+          <button 
+            className="test_btn text-red-500" 
+            onClick={() => window.open("https://github.com/shinic1/Emotion-detection", "_blank", "noopener,noreferrer")}>
+            <img src="github.png" alt="github" height={45} width={45} style={{ display: 'block', margin: '0 auto' }} />
+            </button>
         </div>
       )}
       {openPopup === 'venus' && (
