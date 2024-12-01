@@ -733,8 +733,6 @@ h1 {
 }
 .popup_mercury{
   position: absolute;
-  max-width: 75vw;
-  max-height: 75vh;
   width: 1000px;
   height: 650px;
   opacity: 1;
