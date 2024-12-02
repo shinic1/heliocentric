@@ -142,7 +142,7 @@ function App() {
             <h2>Ultimate Retreats</h2>
             <button className='close_btn' onClick={() => setOpenPopup(null)}>X</button>
           </div>
-          <p className="text-sm">Details about Venus here.</p>
+          <p className="text-sm">Is a class project that aimed to be the backbone of a hotel comparison website.</p>
           <div className="image-container">
           <img className='show1' src="database_example_1.png" alt="database" height={293} width={550} />
           </div>
@@ -154,7 +154,10 @@ function App() {
             <h2>Pecunia</h2>
             <button className='close_btn' onClick={() => setOpenPopup(null)}>X</button>
           </div>
-          <p className="text-sm">Details about Earth here.</p>
+          <p className="text-sm">Is a finance tracker with a modern UI and various features such as income & expense tracking and a dictionary</p>
+          <div className="image-container">
+          <img className='show1' src="pecunia_example_1.jpg" alt="database" height={293} width={550} />
+          </div>
           <button 
             className="test_btn text-red-500" 
             onClick={() => window.open("https://github.com/shinic1/FinanceAPP", "_blank", "noopener,noreferrer")}>
@@ -217,4 +220,3 @@ function App() {
 }
 
 export default App;
- 
