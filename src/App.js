@@ -16,7 +16,10 @@ function App() {
       "python.png",
       "rstudio.png",
       "git.png",
-      "android_studio.png"
+      "android_studio.png",
+      "motus_example_1.png",
+      "database_example_1.png",
+      "pecunia_example_1.jpg",
     ];
 
     images.forEach((src) => {
