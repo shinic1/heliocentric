@@ -64,7 +64,7 @@ function App() {
           <img className='nico' src="Nico_final.jpg" alt="nico" height={200} width={200}/>
           <p className="intro">Hey, I'm Nico. <br />
           I'm a computer science student <br />
-          with a passion for creating <br />efficient and modern solutions. <br />
+          with a passion for creating <br />efficient and modern<br /> solutions. <br />
           I specialize in creating <br />dynamic applications, <br />
           optimizing user interfaces<br />and solving complex technical challenges <br />
           </p>
