@@ -998,7 +998,7 @@ h1 {
   color: transparent;
   position: center;
   display: block;
-  object-fit: fill; /* Ensures the image retains its aspect ratio */
+  object-fit: fill;
   border-radius: 10px;
   border-style: solid;
   border-color: #21234a;
@@ -1006,9 +1006,23 @@ h1 {
 
 }
 .image-container {
-  display: flex; /* Use flexbox to align items in a row */
-  gap: 20px; /* Space between images */
-  justify-content: center; /* Center images horizontally */
-  align-items: center; /* Align images vertically */
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
   margin-top: 1%;
+}
+.rectangle {
+  position: fixed; /* Fix the position at the top of the screen */
+  top: 0; /* Align to the top */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for half the rectangle's width */
+  width: 45vw; /* Adjust the width as needed */
+  height: 50px; /* Adjust the height as needed */
+  background-color:#0a0f23; /* Change the color as needed */
+  z-index: 1000; /* Ensure it appears above other elements */
+  border: 0.5px solid white;
+  border-radius: 0px 0px 10px 10px;
+  color: white;
+  justify-content: center;
 }

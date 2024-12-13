@@ -33,6 +33,9 @@ function App() {
   return (
     <div style={{ height: '100vh', width: '100vw' }}>
       {/* Planets */}
+      <div className="rectangle">
+        <p className='info_rect'>Click on the Sun to find out more about and on the planets to see my projects</p>
+      </div>
       <div className="sun" onClick={() => setOpenPopup('sun')}></div>
       <div className="mercury" onClick={() => setOpenPopup('mercury')}></div>
       <div className="venus" onClick={() => setOpenPopup('venus')}></div>
@@ -142,13 +145,18 @@ function App() {
       {openPopup === 'venus' && (
         <div className="popup_venus">
           <div className="flex flex-row justify-between">
-            <h2>Ultimate Retreats</h2>
+            <h2>Pow</h2>
             <button className='close_btn' onClick={() => setOpenPopup(null)}>X</button>
           </div>
-          <p className="text-sm">Is a class project that aimed to be the backbone of a hotel comparison website.</p>
+          <p className="text-sm">Pow is a ski resort companion app designed to help skiing and snowboarding enthusiasts explore, track, and enjoy the best experiences in the snow.</p>
           <div className="image-container">
-          <img className='show1' src="database_example_1.png" alt="database" height={293} width={550} />
+          {/*<img className='show1' src="pow_example_1.png" alt="pow" style={{height:"auto", width:"200px", maxHeight: '450px'}}  />*/}
           </div>
+          <button 
+            className="test_btn text-red-500" 
+            onClick={() => window.open("https://github.com/shinic1/pow", "_blank", "noopener,noreferrer")}>
+            <img src="github.png" alt="github" height={45} width={45} style={{ display: 'block', margin: '0 auto' }} />
+          </button>
         </div>
       )}
       {openPopup === 'earth' && (
