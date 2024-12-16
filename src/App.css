@@ -1013,16 +1013,19 @@ h1 {
   margin-top: 1%;
 }
 .rectangle {
-  position: fixed; /* Fix the position at the top of the screen */
-  top: 0; /* Align to the top */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Adjust for half the rectangle's width */
-  width: 45vw; /* Adjust the width as needed */
-  height: 50px; /* Adjust the height as needed */
-  background-color:#0a0f23; /* Change the color as needed */
-  z-index: 1000; /* Ensure it appears above other elements */
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 45vw;
+  height: 50px;
+  background-color: #0a0f23;
+  z-index: 1000;
   border: 0.5px solid white;
   border-radius: 0px 0px 10px 10px;
   color: white;
-  justify-content: center;
+
+  display: flex; /* Enable flexbox */
+  align-items: center; /* Vertically center the content */
+  justify-content: center; /* Horizontally center the content */
 }
