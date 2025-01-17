@@ -167,7 +167,7 @@ function App() {
           </div>
           <p className="text-sm">Is a finance tracker with a modern UI and various features such as income & expense tracking and a dictionary</p>
           <div className="image-container">
-          <img className='show1' src="pecunia_example_1.jpg" alt="database" height={293} width={550} />
+          <img className='show1' src="pecunia_example_1.png" alt="database" height={293} width={550} />
           </div>
           <button 
             className="test_btn text-red-500" 
