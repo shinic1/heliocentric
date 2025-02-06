@@ -181,8 +181,8 @@ h1 {
   border-radius: 50%;
   cursor: pointer;
   background-image: url('Earth.png');
-  background-size: 75%; /* Ensure the full image, including rings, is visible */
-  background-repeat: no-repeat; /* Prevent tiling of the background image */
+  background-size: 75%;
+  background-repeat: no-repeat;
   background-position: center center;
 
   transform: var(--earth-center) rotate(0deg) var(--earth-orbit-radius);
@@ -284,7 +284,7 @@ h1 {
   background-image: url('Jupiter.png');
   background-size: cover;
   background-position: center;
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 
   transform: var(--jupiter-center) rotate(0deg) var(--jupiter-orbit-radius);
@@ -334,10 +334,10 @@ h1 {
   border-radius: 50%;
   cursor: pointer;
   background-image: url('Saturn.png');
-  background-size: 85%; /* Ensure the full image, including rings, is visible */
-  background-repeat: no-repeat; /* Prevent tiling of the background image */
+  background-size: 85%;
+  background-repeat: no-repeat;
   background-position: center center;
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 
   transform: var(--saturn-center) rotate(0deg) var(--saturn-orbit-radius);
@@ -387,10 +387,10 @@ h1 {
   border-radius: 50%;
   cursor: pointer;
   background-image: url('Uranus.png');
-  background-size: 75%; /* Ensure the full image, including rings, is visible */
-  background-repeat: no-repeat; /* Prevent tiling of the background image */
+  background-size: 75%;
+  background-repeat: no-repeat;
   background-position: center center;
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 
   transform: var(--uranus-center) rotate(0deg) var(--uranus-orbit-radius);
@@ -442,7 +442,7 @@ h1 {
   background-image: url('Neptune.png');
   background-size: cover;
   background-position: center;
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 
   transform: var(--neptune-center) rotate(10deg) var(--neptune-orbit-radius);
@@ -529,10 +529,10 @@ h1 {
     font-size: 15px;
 }
 .linkedin-icon {
-  height: 40px; /* Set consistent height */
-  width: 40px;  /* Set consistent width */
-  margin: 0; /* Remove unnecessary margins */
-  display: block; /* Prevent inline alignment issues */
+  height: 40px;
+  width: 40px;
+  margin: 0; 
+  display: block;
 }
 .linkedin img{
   display: block;
@@ -555,11 +555,11 @@ h1 {
   background-color: #191b40;
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: white;
-  display: flex; /* Flex layout for alignment */
-  align-items: center; /* Vertical alignment */
-  justify-content: flex-start; /* Ensure items align left */
-  padding-left: 10px; /* Space between edge and content */
-  gap: 30px; /* Space between icon and text */
+  display: flex; 
+  align-items: center;
+  justify-content: flex-start; 
+  padding-left: 10px;
+  gap: 30px;
   top: 20%;
   right: 5%;
 }
@@ -575,10 +575,10 @@ h1 {
   font-weight: bold;
 }
 .github-icon{
-  height: 60px; /* Set consistent height */
-  width: 60px;  /* Set consistent width */
-  margin: -10px; /* Remove unnecessary margins */
-  display: block; /* Prevent inline alignment issues */
+  height: 60px;
+  width: 60px;
+  margin: -10px;
+  display: block;
 }
 .github img{
   display: block;
@@ -600,10 +600,10 @@ h1 {
   background-color: #191b40;
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: white;
-  display: flex; /* Flex layout for alignment */
-  align-items: center; /* Vertical alignment */
-  justify-content: flex-start; /* Ensure items align left */
-  padding-left: 10px; /* Space between edge and content */
+  display: flex; 
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 10px;
   gap: 30px;
   top: 35%;
   right: 5%;
@@ -619,10 +619,10 @@ h1 {
   font-weight: bold;
 }
 .contact-icon{
-  height: 40px; /* Set consistent height */
-  width: 40px;  /* Set consistent width */
-  margin: 5px; /* Remove unnecessary margins */
-  display: block; /* Prevent inline alignment issues */
+  height: 40px;
+  width: 40px;
+  margin: 5px;
+  display: block;
 }
 .contact img{
   display: block;
@@ -644,8 +644,8 @@ h1 {
   background-color: #191b40;
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: white;
-  display: flex; /* Flex layout for alignment */
-  align-items: center; /* Vertical alignment */
+  display: flex;
+  align-items: center; 
   justify-content: flex-start; 
   gap: 24px;
   top: 50%;
@@ -663,12 +663,12 @@ h1 {
 }
 .stack {
   position: relative;
-  display: flex; /* Use flex if you want multiple figures side-by-side */
+  display: flex;
 }
 .react{
-  text-align: center; /* Center aligns text below each image */
+  text-align: center;
   position: relative;
-  left: -4%; /* Moves the entire figure to the left by 5% */
+  left: -4%; 
   margin-top: 90px;
 }
 .reactfig{
@@ -677,9 +677,9 @@ h1 {
   object-fit: contain;
 }
 .html{
-  text-align: center; /* Center aligns text below each image */
+  text-align: center; 
   position: relative;
-  left: -9%; /* Moves the entire figure to the left by 5% */
+  left: -9%; 
   margin-top: 85px;
 }
 .htmlfig{
@@ -688,9 +688,9 @@ h1 {
   object-fit: contain;
 }
 .css{
-  text-align: center; /* Center aligns text below each image */
+  text-align: center; 
   position: relative;
-  left: -14%; /* Moves the entire figure to the left by 5% */
+  left: -14%; 
   margin-top: 85px;
 }
 .cssfig{
@@ -699,9 +699,9 @@ h1 {
   object-fit: contain;
 }
 .java{
-  text-align: center; /* Center aligns text below each image */
+  text-align: center; 
   position: relative;
-  left: -19%; /* Moves the entire figure to the left by 5% */
+  left: -19%; 
   margin-top: 85px;
 }
 .javafig{
@@ -710,9 +710,9 @@ h1 {
   object-fit: contain;
 }
 .python{
-  text-align: center; /* Center aligns text below each image */
+  text-align: center;
   position: relative;
-  left: -24%; /* Moves the entire figure to the left by 5% */
+  left: -24%; 
   margin-top: 85px;
 }
 .pythonfig{
@@ -721,9 +721,9 @@ h1 {
   object-fit: contain;
 }
 .rstudio{
-  text-align: center; /* Center aligns text below each image */
+  text-align: center; 
   position: relative;
-  left: -28%; /* Moves the entire figure to the left by 5% */
+  left: -28%; 
   margin-top: 85px;
 }
 .rstudiofig{
@@ -732,9 +732,9 @@ h1 {
   object-fit: contain;
 }
 .git{
-  text-align: center; /* Center aligns text below each image */
+  text-align: center; 
   position: relative;
-  left: -32%; /* Moves the entire figure to the left by 5% */
+  left: -32%; 
   margin-top: 85px;
 }
 .gitfig{
@@ -743,9 +743,9 @@ h1 {
   object-fit: contain;
 }
 .android_studio{
-  text-align: center; /* Center aligns text below each image */
+  text-align: center; 
   position: relative;
-  left: -37%; /* Moves the entire figure to the left by 5% */
+  left: -37%;
   margin-top: 85px;
 }
 .android_studiofig{
@@ -1026,7 +1026,7 @@ h1 {
   color: white;
   font-size: 0.90vw;
 
-  display: flex; /* Enable flexbox */
-  align-items: center; /* Vertically center the content */
-  justify-content: center; /* Horizontally center the content */
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
 }

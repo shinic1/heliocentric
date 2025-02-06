@@ -32,7 +32,6 @@ function App() {
 
   return (
     <div style={{ height: '100vh', width: '100vw' }}>
-      {/* Planets */}
       <div className="rectangle">
         <p className='info_rect'>Click on the Sun to find out more about and on the planets to see my projects</p>
       </div>
@@ -46,7 +45,6 @@ function App() {
       <div className="uranus" onClick={() => setOpenPopup('uranus')}></div>
       <div className="neptune" onClick={() => setOpenPopup('neptune')}></div>
 
-      {/* Orbits */}
       <div className="mercury_orbit"></div>
       <div className="venus_orbit"></div>
       <div className="earth_orbit"></div>
@@ -56,7 +54,6 @@ function App() {
       <div className="uranus_orbit"></div>
       <div className="neptune_orbit"></div>
 
-      {/* Popup for Each Planet */}
       {openPopup === 'sun' && (
         <div className="popup_sun">
           <div className="flex flex-row justify-between">
